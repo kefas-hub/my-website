@@ -1,0 +1,472 @@
+:root {
+  --rust: #e2bd24;
+  --rust-dark: #c5a015;
+  --cream: #f3f0e7;
+  --ink: #111313;
+  --paper: #faf8f2;
+  --line: #d2cec3;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 248, 242, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(17, 19, 19, .1);
+}
+
+
+/* =========================================================
+   GENERAL ACCENTS
+   ========================================================= */
+
+.logo span,
+.invite span,
+nav a:hover,
+.eyebrow,
+.topics article > span,
+.topics a,
+cite,
+.form-message {
+  color: #c8a515;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  background: #111313;
+  color: #f7f4eb;
+}
+
+.hero h1 em {
+  color: #e2bd24;
+}
+
+.hero-image {
+  background: #171a1b;
+}
+
+.hero-image img {
+  object-position: center 18%;
+  filter: contrast(1.09) brightness(1.06) saturate(.82);
+  mix-blend-mode: normal;
+  transform: scale(1.015);
+}
+
+.image-tint {
+  background: linear-gradient(
+    180deg,
+    rgba(226, 189, 36, 0.06),
+    rgba(7, 9, 10, .22)
+  );
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.cream {
+  background: #e2bd24;
+  border-color: #e2bd24;
+  color: #111313;
+}
+
+.rust {
+  background: #111313;
+  border-color: #111313;
+  color: #fff;
+}
+
+.ink {
+  background: #111313;
+  border-color: #111313;
+  color: #fff;
+}
+
+.button:hover {
+  background: #c5a015;
+  border-color: #c5a015;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PRESS
+   ========================================================= */
+
+.press p,
+.section-label,
+.small-note {
+  color: #6b6d69;
+}
+
+.press b {
+  color: #333333;
+}
+
+
+/* =========================================================
+   QUOTES
+   ========================================================= */
+
+.quotes article.dark,
+.contact {
+  background: #111313;
+}
+
+.quotes article.dark blockquote,
+.quotes article.dark cite {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   BOOK
+   ========================================================= */
+
+.book {
+  background: #ece8dd;
+  color: #111313;
+}
+
+.book-copy .line-link {
+  color: #111313;
+}
+
+.book-copy .eyebrow {
+  color: #c8a515;
+}
+
+.real-book {
+  box-shadow: 22px 25px 0 #111313;
+}
+
+
+/* =========================================================
+   TOPICS
+   ========================================================= */
+
+.topics article > span {
+  color: #c8a515;
+}
+
+.topics a {
+  color: #c8a515;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about {
+  background: var(--paper);
+}
+
+.about-photo {
+  background: #111313;
+  overflow: hidden;
+}
+
+.about-photo img {
+  object-position: center 22%;
+  filter: contrast(1.07) brightness(1.05) saturate(.82);
+}
+
+.about-copy .line-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   FEATURE
+   ========================================================= */
+
+.feature {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+.newsletter {
+  background: #111313;
+  color: #ffffff;
+}
+
+.newsletter h2 {
+  color: #ffffff;
+}
+
+.newsletter .eyebrow {
+  color: #c8a515;
+}
+
+.newsletter > p:not(.eyebrow) {
+  color: #cccccc;
+}
+
+.newsletter form {
+  border-bottom-color: #ffffff;
+}
+
+.newsletter input {
+  color: #ffffff;
+}
+
+.newsletter input::placeholder {
+  color: #888888;
+}
+
+.newsletter button {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery {
+  background: #faf8f2;
+}
+
+.gallery-add:hover {
+  border-color: #c8a515;
+  background: rgba(200, 165, 21, 0.04);
+}
+
+.gallery-add .plus {
+  color: #c8a515;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact {
+  background: #111313;
+  color: var(--cream);
+  text-align: center;
+}
+
+.contact > div {
+  max-width: 950px;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: clamp(58px, 8vw, 110px);
+  margin-bottom: 45px;
+  color: #ffffff;
+}
+
+.contact .eyebrow {
+  color: #c8a515;
+}
+
+.contact .button.cream {
+  background: #e2bd24;
+  border-color: #e2bd24;
+  color: #111313;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background: #ffffff;
+  padding: 70px 5vw 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+footer div {
+  display: flex;
+  gap: 24px;
+  justify-self: end;
+  font-size: 12px;
+}
+
+footer small {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  color: #777167;
+}
+
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity .7s,
+    transform .7s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* =========================================================
+   SCREEN READER
+   ========================================================= */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .header {
+    grid-template-columns: 1fr auto;
+    background: rgba(250, 248, 242, 0.98);
+  }
+
+  .header nav,
+  .invite {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    background: transparent;
+    border: 0;
+  }
+
+  .header nav.open {
+    display: flex;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    right: 0;
+    background: rgba(250, 248, 242, 0.98);
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-image {
+    height: 540px;
+  }
+
+  .hero-copy {
+    padding: 75px 25px;
+  }
+
+  .hero-side {
+    display: none;
+  }
+
+  .quotes,
+  .feature,
+  .book,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .quotes article {
+    padding: 55px 25px;
+  }
+
+  .section {
+    padding: 90px 25px;
+  }
+
+  .feature {
+    gap: 70px;
+  }
+
+  .book-art {
+    margin-top: 40px;
+  }
+
+  .about-photo {
+    height: 520px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    padding: 50px 25px 20px;
+    background: #ffffff;
+  }
+
+  footer div {
+    justify-self: start;
+  }
+
+  .press div {
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+    border: 0;
+  }
+
+  .newsletter input {
+    border-bottom: 1px solid;
+  }
+
+  .newsletter button {
+    padding: 18px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
