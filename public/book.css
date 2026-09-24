@@ -1,0 +1,18 @@
+.real-book {
+  width: min(390px, 85%);
+  height: auto;
+  object-fit: contain;
+  box-shadow: 25px 28px 0 #0a0a0a;
+  transform: rotate(2deg);
+  transition: transform 0.35s ease;
+}
+
+.book-art:hover .real-book {
+  transform: rotate(0) translateY(-7px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .real-book {
+    transition: none;
+  }
+}
